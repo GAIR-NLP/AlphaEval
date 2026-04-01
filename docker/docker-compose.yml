@@ -1,0 +1,35 @@
+# Docker Compose configuration for AgentEval
+# Supports multiple agent environments
+
+version: '3.8'
+
+services:
+
+  # Claude Code CLI - Uses claude CLI directly
+  claude-code:
+    build:
+      context: ./claude-code
+      dockerfile: Dockerfile
+    image: agenteval/claude-code:latest
+    environment:
+      - ANTHROPIC_AUTH_TOKEN=${ANTHROPIC_AUTH_TOKEN:-${ANTHROPIC_API_KEY}}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - TASK_PROMPT=${TASK_PROMPT}
+      - MODEL_NAME=${MODEL_NAME:-claude-sonnet-4-20250514}
+    volumes:
+      - ${WORKSPACE_PATH:-./workspace}:/workspace
+    working_dir: /workspace
+
+  # Cursor Agent - Uses Cursor Agent CLI with Grok model
+  cursor-agent:
+    build:
+      context: ./cursor-agent
+      dockerfile: Dockerfile
+    image: agenteval/cursor-agent:latest
+    environment:
+      - CURSOR_API_KEY=${CURSOR_API_KEY}
+      - TASK_PROMPT=${TASK_PROMPT}
+      - MODEL_NAME=${MODEL_NAME:-grok}
+    volumes:
+      - ${WORKSPACE_PATH:-./workspace}:/workspace
+    working_dir: /workspace

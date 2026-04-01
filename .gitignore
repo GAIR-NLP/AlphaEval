@@ -1,0 +1,37 @@
+# Evaluation outputs
+evals/
+allrun/
+final/
+results/
+
+# Config with secrets
+config.yaml
+config/config.yaml
+myenv.env
+*.env
+
+# API keys
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Large files
+*.tar.gz
+*.zip
+*.xlsx
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,30 @@
+# AgentEval Configuration Example
+# Copy this file to config.yaml and fill in your API keys
+
+# LLM API Configuration (for LLM-as-a-Judge)
+llm:
+  # API key (required)
+  api_key: "your-api-key-here"
+  
+  # Base URL (optional, for OpenRouter/Azure/other OpenAI-compatible providers)
+  # Comment out or remove if using OpenAI directly
+  base_url: "https://openrouter.ai/api/v1"
+  
+  # Default model for LLM-as-a-Judge
+  # Examples:
+  #   - openai/gpt-4o (via OpenRouter)
+  #   - gpt-4o (via OpenAI directly)
+  #   - anthropic/claude-3.5-sonnet (via OpenRouter)
+  judge_model: "openai/gpt-4o"
+
+# Agent API Configuration (for running agents)
+agent:
+  # Anthropic API key for Claude Code (or use ANTHROPIC_API_KEY env var)
+  anthropic_api_key: ""
+
+  # OpenAI API key for Codex (or use OPENAI_API_KEY env var)
+  openai_api_key: ""
+
+  # GitHub token for Copilot (or use GITHUB_TOKEN env var)
+  github_token: ""
+

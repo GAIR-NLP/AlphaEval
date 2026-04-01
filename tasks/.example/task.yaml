@@ -1,0 +1,24 @@
+# Example task configuration
+# Copy this directory and customize for your own tasks
+
+name: "Example Task"
+description: "A brief description of what the agent needs to do"
+category: example          # Domain category (e.g., hr, finance, procurement, software, healthcare, research)
+difficulty: medium         # easy, medium, hard
+
+tags:
+  - example
+  - template
+
+# Evaluation configuration
+evaluation:
+  type: code_exec          # code_exec, llm_judge, or exact_match
+  answer_path: results/ans.md
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+# Agent configuration
+agent:
+  timeout_seconds: 600     # Max execution time in seconds
+  max_turns: 100           # Max agent interaction turns
+  model: claude-sonnet-4-20250514
