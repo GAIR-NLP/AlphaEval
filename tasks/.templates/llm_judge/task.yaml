@@ -1,0 +1,21 @@
+# Template: LLM-as-Judge Evaluation (Rubric-based)
+# Use when: The answer requires subjective quality assessment
+# Examples: research reports, analytical writing, policy analysis, pitch critiques
+
+name: "Your Task Name"
+description: "Brief description of what the agent needs to do"
+category: research          # hr, finance, procurement, software, healthcare, research
+difficulty: hard
+
+tags:
+  - deep-research
+  - report-generation
+
+evaluation:
+  type: code_exec           # Still code_exec — the rubric.py calls LLM-as-Judge internally
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 900
+  max_turns: 100

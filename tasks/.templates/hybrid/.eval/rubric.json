@@ -1,0 +1,33 @@
+{
+    "question": "Your main task description",
+    "numerical_checks": [
+        {
+            "name": "Calculation A",
+            "expected": 150.5,
+            "tolerance": 0.01,
+            "weight": 2,
+            "extraction_pattern": "Calculation A[：:]\\s*([\\d.]+)"
+        },
+        {
+            "name": "Calculation B",
+            "expected": 2026,
+            "tolerance": 0,
+            "weight": 1,
+            "extraction_pattern": "Calculation B[：:]\\s*(\\d{4}-\\d{2}-\\d{2})"
+        }
+    ],
+    "rubric_checks": [
+        {
+            "point": "Correctly explained the reasoning behind the calculation",
+            "weight": 1
+        },
+        {
+            "point": "Identified the cascade dependency between steps",
+            "weight": 2
+        },
+        {
+            "point": "Provided a risk assessment for edge cases",
+            "weight": 1
+        }
+    ]
+}

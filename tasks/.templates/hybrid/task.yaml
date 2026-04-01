@@ -1,0 +1,21 @@
+# Template: Hybrid Evaluation (LLM-as-Judge + Numerical Verification)
+# Use when: The answer requires BOTH subjective quality assessment AND numeric accuracy
+# Examples: clinical trial calculations, insurance reimbursement, financial analysis with tables
+
+name: "Your Task Name"
+description: "Brief description"
+category: healthcare
+difficulty: hard
+
+tags:
+  - hybrid-evaluation
+  - numerical-verification
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 900
+  max_turns: 100

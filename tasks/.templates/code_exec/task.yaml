@@ -1,0 +1,21 @@
+# Template: Code Execution Evaluation (Constraint Verification)
+# Use when: The answer has a verifiable numeric/structured output
+# Examples: optimization problems, data extraction, calculation tasks
+
+name: "Your Task Name"
+description: "Brief description of what the agent needs to do"
+category: procurement       # hr, finance, procurement, software, healthcare, research
+difficulty: hard             # easy, medium, hard
+
+tags:
+  - optimization
+  - constraint-satisfaction
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 600
+  max_turns: 100

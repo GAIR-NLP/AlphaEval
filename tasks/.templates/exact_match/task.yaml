@@ -1,0 +1,21 @@
+# Template: Exact Match Evaluation
+# Use when: The answer is a single value or short string that must match exactly
+# Examples: math problems, factual Q&A, classification tasks
+
+name: "Your Task Name"
+description: "Brief description"
+category: research
+difficulty: easy
+
+tags:
+  - exact-match
+  - factual
+
+evaluation:
+  type: exact_match
+  expected_answer: "42"      # The exact expected answer
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 300
+  max_turns: 50

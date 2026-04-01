@@ -1,0 +1,29 @@
+{
+    "question": "Your main research question or task description here",
+    "rubrics": [
+        {
+            "point": "Covered subtopic A with specific evidence",
+            "weight": 2
+        },
+        {
+            "point": "Mentioned key entity/concept X and its significance",
+            "weight": 1
+        },
+        {
+            "point": "Provided quantitative data or statistics to support claims",
+            "weight": 2
+        },
+        {
+            "point": "Discussed trend Y and its implications",
+            "weight": 1
+        },
+        {
+            "point": "Included analysis of risks or challenges",
+            "weight": 1
+        },
+        {
+            "point": "Drew conclusions supported by the evidence presented",
+            "weight": 1
+        }
+    ]
+}

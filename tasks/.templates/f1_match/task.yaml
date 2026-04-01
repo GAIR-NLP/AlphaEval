@@ -1,0 +1,21 @@
+# Template: F1 Score / Set Matching Evaluation
+# Use when: The agent must select a subset of items, evaluated by precision/recall/F1
+# Examples: resume screening, document selection, entity extraction, classification
+
+name: "Your Task Name"
+description: "Brief description"
+category: hr
+difficulty: hard
+
+tags:
+  - selection
+  - f1-score
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 600
+  max_turns: 100
