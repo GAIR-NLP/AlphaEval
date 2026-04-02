@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="assets/logo.png" width="120" alt="AlphaEval Logo">
   <h1 align="center">AlphaEval：在生产环境中评估 AI 智能体</h1>
   <p align="center">
-    <a href="https://alphaeval.ai"><img src="assets/logo.png" height="16">&nbsp;<b>官网</b></a> &nbsp;|&nbsp;
+    <a href="https://alphaeval.ai">🌐&nbsp;<b>官网</b></a> &nbsp;|&nbsp;
     <a href="paper/AlphaEval_v0.pdf">📄&nbsp;<b>论文</b></a> &nbsp;|&nbsp;
     <a href="https://github.com/GAIR-NLP/AlphaEval"><img src="https://github.githubassets.com/favicons/favicon.svg" height="16">&nbsp;<b>GitHub</b></a> &nbsp;|&nbsp;
-    <a href="README.md">🌐&nbsp;<b>English</b></a>
+    <a href="README.md"><b>English</b></a>
   </p>
 </p>
 

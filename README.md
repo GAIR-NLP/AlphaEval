@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="assets/logo.png" width="120" alt="AlphaEval Logo">
   <h1 align="center">AlphaEval: Evaluating Agents in Production</h1>
   <p align="center">
-    <a href="https://alphaeval.ai"><img src="assets/logo.png" height="16">&nbsp;<b>Website</b></a> &nbsp;|&nbsp;
+    <a href="https://alphaeval.ai">🌐&nbsp;<b>Website</b></a> &nbsp;|&nbsp;
     <a href="paper/AlphaEval_v0.pdf">📄&nbsp;<b>Paper</b></a> &nbsp;|&nbsp;
     <a href="https://github.com/GAIR-NLP/AlphaEval"><img src="https://github.githubassets.com/favicons/favicon.svg" height="16">&nbsp;<b>GitHub</b></a> &nbsp;|&nbsp;
-    <a href="README_zh.md">🇨🇳&nbsp;<b>中文</b></a>
+    <a href="README_zh.md"><b>中文</b></a>
   </p>
 </p>
 
