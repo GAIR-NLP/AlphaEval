@@ -147,6 +147,14 @@ tasks/<task-name>/
 }
 ```
 
+## 致谢
+
+感谢 Keyu Li 和 Tianze Xu 对本项目的贡献。
+
+## 联系方式
+
+如有问题或合作意向，请联系：**lupengrui@sjtu.edu.cn**
+
 ## 许可证
 
 MIT License — 详见 [LICENSE](LICENSE)。

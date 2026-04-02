@@ -147,6 +147,14 @@ All agents are invoked via CLI within Docker-sandboxed environments with full ou
 }
 ```
 
+## Acknowledgements
+
+We thank Keyu Li and Tianze Xu for their valuable contributions to this project.
+
+## Contact
+
+For questions or collaboration inquiries, please contact: **lupengrui@sjtu.edu.cn**
+
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
