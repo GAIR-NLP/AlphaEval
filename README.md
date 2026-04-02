@@ -125,6 +125,12 @@ Key findings:
 
 The 94 tasks represent **2,420 professional hours** (~60 person-weeks) of labor, valued at **$154K–$231K** (USD).
 
+## Paper
+
+📄 **[AlphaEval: Evaluating Agents in Production (v0)](paper/AlphaEval_v0.pdf)**
+
+> This is an early version of the paper. It will be further revised and improved. An arXiv version will be released soon.
+
 ## Citation
 
 ```bibtex
