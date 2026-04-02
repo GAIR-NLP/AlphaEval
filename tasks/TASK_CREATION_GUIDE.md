@@ -13,6 +13,7 @@ Each task is a self-contained directory with a standardized structure. Choose th
 | `exact_match` | Answer is a single correct value | Math problems, factual Q&A, classification |
 | `f1_match` | Agent must select items from a set | Resume screening, document selection, entity extraction |
 | `hybrid` | Needs BOTH numeric accuracy AND qualitative quality | Clinical calculations + reasoning, financial analysis + insights |
+| `ui_testing` | Agent builds a web/mobile app tested via browser | Mini-programs, web apps, dashboards, full-stack apps |
 
 ## Quick Start
 
@@ -91,6 +92,39 @@ Edit `.eval/rubric.json` with both sections:
     ]
 }
 ```
+
+#### For `ui_testing` (Automated Browser Testing):
+Edit `task.yaml` rubrics with test steps:
+```yaml
+rubrics:
+  - point: "User can log in and see the home page"
+    weight: 1
+    test_steps:
+      - action: goto
+        url: "/"
+      - action: click
+        selector: "#login-btn"
+      - action: wait_for
+        selector: ".home-page"
+      - action: assert_visible
+        selector: ".home-content"
+```
+
+Supported test actions:
+| Action | Description | Parameters |
+|--------|-------------|------------|
+| `goto` | Navigate to URL | `url` |
+| `click` | Click element | `selector` |
+| `fill` | Type into input | `selector`, `value` |
+| `wait_for` | Wait for element | `selector` |
+| `wait_for_navigation` | Wait for page load | — |
+| `assert_visible` | Check element visible | `selector` |
+| `assert_text` | Check element text | `selector`, `text` |
+| `assert_count_gte` | Check N+ elements | `selector`, `count` |
+| `scroll_to_bottom` | Scroll to bottom | — |
+| `screenshot` | Take screenshot | `value` (path) |
+
+Requirements: `pip install playwright && playwright install chromium`
 
 ### Step 6: Test your task
 

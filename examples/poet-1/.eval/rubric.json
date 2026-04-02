@@ -1,0 +1,21 @@
+{
+    "question": "Analyze SkyJet Corp's 2020-2023 commercial aircraft and defense deliveries from annual reports (fictional example)",
+    "rubrics": [
+        {
+            "point": "Contains a table showing SJ-700 series delivery numbers for each year from 2020 to 2023",
+            "weight": 1
+        },
+        {
+            "point": "Contains delivery numbers for SJ-900 widebody series across the analysis period",
+            "weight": 1
+        },
+        {
+            "point": "Contains delivery numbers for additional model series (SJ-800 or others)",
+            "weight": 1
+        },
+        {
+            "point": "Provides year-over-year trend analysis for commercial deliveries with contributing factors",
+            "weight": 1
+        }
+    ]
+}

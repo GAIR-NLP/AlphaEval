@@ -1,0 +1,18 @@
+name: "BOM Board Card Procurement Optimization"
+description: "Select minimum-cost combination of board cards from 2000 options satisfying all functional requirements (fictional example)"
+category: procurement
+difficulty: hard
+
+tags:
+  - optimization
+  - constraint-satisfaction
+  - bom-procurement
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 900
+  max_turns: 100

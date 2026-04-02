@@ -1,0 +1,86 @@
+# NOTE: This is a fictional task for demonstration purposes only.
+name: "Poetry Appreciation Mini-Program"
+description: "Build a full-stack mobile mini-program for poetry browsing with AI text-to-speech, community features, and collection management (fictional example)"
+category: software
+difficulty: hard
+
+tags:
+  - uniapp
+  - miniprogram
+  - full-stack
+  - ui-testing
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+  rubrics:
+    - point: "User can log in via authorization and is redirected to the Home page"
+      weight: 1
+    - point: "Home page displays a waterfall/card list of poetry content with pull-to-refresh and filter by category"
+      weight: 4
+    - point: "Tapping a card navigates to a detail page showing full content for that item"
+      weight: 4
+    - point: "AI text-to-speech controls (play/pause, speed, voice selection, progress bar) are functional on the detail page"
+      weight: 4
+    - point: "User can favorite/unfavorite content and favorites sync to the Favorites page"
+      weight: 3
+    - point: "Share button copies the detail page URL to clipboard with a toast confirmation"
+      weight: 2
+    - point: "User can publish a community post with text and images via a modal form"
+      weight: 3
+    - point: "Users can like and comment on community posts with real-time feedback"
+      weight: 2
+    - point: "Favorites page shows all saved items with type filtering and batch unfavorite"
+      weight: 3
+    - point: "Bottom tab bar navigates between Home, Community, Favorites, and Profile pages, preserving scroll position"
+      weight: 2
+  test_config:
+    app_url: "http://localhost:5185/"
+    mobile_device: "iPhone 13"
+  data_schema:
+    tables:
+      - tableName: users
+        description: "User accounts"
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: nickname, columnType: string }
+          - { columnName: avatar, columnType: string }
+          - { columnName: created_at, columnType: datetime }
+      - tableName: contents
+        description: "Poetry and artwork entries"
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: type, columnType: string }
+          - { columnName: title, columnType: string }
+          - { columnName: author, columnType: string }
+          - { columnName: content, columnType: text }
+          - { columnName: tags, columnType: string }
+          - { columnName: created_at, columnType: datetime }
+      - tableName: posts
+        description: "Community posts"
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: user_id, columnType: number }
+          - { columnName: title, columnType: string }
+          - { columnName: content, columnType: text }
+          - { columnName: likes_count, columnType: number }
+          - { columnName: created_at, columnType: datetime }
+      - tableName: favorites
+        description: "User favorites"
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: user_id, columnType: number }
+          - { columnName: target_type, columnType: string }
+          - { columnName: target_id, columnType: number }
+  seed_data:
+    users:
+      - { id: 1, nickname: "PoetLover", avatar: "https://example.com/u1.png", created_at: "2026-01-01" }
+      - { id: 2, nickname: "ArtFan", avatar: "https://example.com/u2.png", created_at: "2026-01-01" }
+    contents:
+      - { id: 101, type: "poem", title: "Quiet Night Thought", author: "Li Bai", content: "Before my bed a pool of light...", tags: "classic", created_at: "2026-01-01" }
+      - { id: 102, type: "art", title: "Ink Landscape", author: "Anonymous", content: "Ink and wash painting", tags: "art", created_at: "2026-01-01" }
+
+agent:
+  timeout_seconds: 1800
+  max_turns: 100

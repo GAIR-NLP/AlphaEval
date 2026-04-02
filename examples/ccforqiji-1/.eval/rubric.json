@@ -1,0 +1,29 @@
+{
+    "question": "Design a 2-minute pitch outline and provide investor-perspective critique for LearnHub (45K registered, 800 WAU AI peer learning platform) — fictional example",
+    "rubrics": [
+        {
+            "point": "Generated a structured pitch outline following a recognized framework (Vertebrae, Problem-Solution-Traction, or similar)",
+            "weight": 2
+        },
+        {
+            "point": "The pitch outline fits within a 2-minute time constraint (concise, not overloaded)",
+            "weight": 1
+        },
+        {
+            "point": "Addressed the 'manual community management to AI scalability' transition with specific logic",
+            "weight": 2
+        },
+        {
+            "point": "Discussed the registration-vs-retention gap (45K registered vs 800 WAU) and its investor perception risk",
+            "weight": 2
+        },
+        {
+            "point": "Provided actionable, specific critique (not generic advice that could apply to any startup)",
+            "weight": 2
+        },
+        {
+            "point": "Referenced specific data points from the project context (user numbers, engagement metrics, etc.)",
+            "weight": 1
+        }
+    ]
+}

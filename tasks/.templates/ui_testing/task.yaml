@@ -1,0 +1,107 @@
+# Template: Automated UI Testing Evaluation
+# Use when: The agent builds a web/mobile app that must be tested via browser interaction
+# Examples: mini-programs, web apps, dashboards, full-stack applications
+
+name: "Your App Name"
+description: "Brief description of the app to build"
+category: software
+difficulty: hard
+
+tags:
+  - ui-testing
+  - full-stack
+  - web-app
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+  # UI test rubric — each item is a user-facing feature to verify
+  rubrics:
+    - point: "User can log in and see the home page"
+      weight: 1
+      test_steps:
+        - action: goto
+          url: "/"
+        - action: click
+          selector: "#login-btn"
+        - action: wait_for
+          selector: ".home-page"
+        - action: assert_visible
+          selector: ".home-content"
+
+    - point: "Main list loads items with pagination"
+      weight: 3
+      test_steps:
+        - action: goto
+          url: "/home"
+        - action: wait_for
+          selector: ".item-card"
+        - action: assert_count_gte
+          selector: ".item-card"
+          count: 5
+        - action: scroll_to_bottom
+        - action: wait_for
+          selector: ".item-card:nth-child(10)"
+
+    - point: "Clicking an item opens its detail page"
+      weight: 3
+      test_steps:
+        - action: click
+          selector: ".item-card:first-child"
+        - action: wait_for_navigation
+        - action: assert_visible
+          selector: ".detail-title"
+        - action: assert_visible
+          selector: ".detail-content"
+
+    - point: "User can submit a form and see confirmation"
+      weight: 2
+      test_steps:
+        - action: goto
+          url: "/create"
+        - action: fill
+          selector: "#title-input"
+          value: "Test Title"
+        - action: fill
+          selector: "#content-input"
+          value: "Test content body"
+        - action: click
+          selector: "#submit-btn"
+        - action: wait_for
+          selector: ".success-toast"
+
+  # Test configuration
+  test_config:
+    app_url: "http://localhost:5173/"      # Where the app runs
+    mobile_device: "iPhone 13"             # Device emulation (optional)
+    timeout_ms: 10000                      # Per-test timeout
+    screenshot_on_fail: true               # Save screenshots for debugging
+
+  # Database schema (for apps with backend)
+  data_schema:
+    tables:
+      - tableName: users
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: username, columnType: string }
+          - { columnName: email, columnType: string }
+      - tableName: items
+        columns:
+          - { columnName: id, columnType: number, isPrimary: true }
+          - { columnName: title, columnType: string }
+          - { columnName: content, columnType: text }
+          - { columnName: created_at, columnType: datetime }
+
+  # Seed data pre-loaded before testing
+  seed_data:
+    users:
+      - { id: 1, username: "testuser", email: "test@example.com" }
+    items:
+      - { id: 1, title: "Sample Item 1", content: "Content 1", created_at: "2026-01-01" }
+      - { id: 2, title: "Sample Item 2", content: "Content 2", created_at: "2026-01-02" }
+
+agent:
+  timeout_seconds: 1800
+  max_turns: 100

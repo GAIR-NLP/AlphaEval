@@ -1,0 +1,19 @@
+name: "SkyJet Corp Aircraft Delivery Analysis"
+description: "Analyze SkyJet Corp's 2020-2023 aircraft delivery data by model from annual reports (fictional example)"
+category: finance
+difficulty: medium
+
+tags:
+  - document-analysis
+  - financial-report
+  - data-extraction
+
+evaluation:
+  type: code_exec
+  answer_path: results/ans.md
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 900
+  max_turns: 100

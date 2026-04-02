@@ -1,0 +1,18 @@
+name: "Startup Pitch Coaching — LearnHub"
+description: "Design a 2-minute pitch and deliver investor-perspective critique for an AI peer learning platform (fictional example)"
+category: finance
+difficulty: hard
+
+tags:
+  - pitch-coaching
+  - startup-evaluation
+  - investor-critique
+
+evaluation:
+  type: code_exec
+  rubric_script: .eval/rubric.py
+  pass_pattern: "result=PASSED"
+
+agent:
+  timeout_seconds: 600
+  max_turns: 100
