@@ -148,7 +148,7 @@ All agents are invoked via CLI within Docker-sandboxed environments with full ou
 
 ## Acknowledgements
 
-We thank Keyu Li and Tianze Xu for their valuable contributions to this project.
+We thank Keyu Li, Tianze Xu, and Zhen Huang for their valuable contributions to this project.
 
 ## Contact
 

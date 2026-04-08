@@ -148,7 +148,7 @@ tasks/<task-name>/
 
 ## 致谢
 
-感谢 Keyu Li 和 Tianze Xu 对本项目的贡献。
+感谢 Keyu Li、Tianze Xu 和黄臻对本项目的贡献。
 
 ## 联系方式
 
