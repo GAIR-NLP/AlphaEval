@@ -139,6 +139,7 @@ This is a living comparison of AlphaEval with existing agent and LLM benchmarks 
 |:--|:--|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | [xbench](https://xbench.org/) | Recruit+Mkt | Model | ✓ | ✗ | ✗ | ✗ | ✓ | ✓ | ✗ |
 | [AgentIF-OneDay](https://arxiv.org/abs/2601.11203) | Daily Tasks | Model | ✗ | ✓ | ✗ | ✗ | ✓ | ✗ | ✓ |
+| [AssetOpsBench](https://arxiv.org/abs/2506.03828) | Industry 4.0 / Asset Ops | Rule+Model | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ✗ |
 
 ## Emerging Benchmarks (2026)
 
