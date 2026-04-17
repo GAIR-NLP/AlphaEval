@@ -2,7 +2,8 @@
   <h1 align="center">AlphaEval: Evaluating Agents in Production</h1>
   <p align="center">
     <a href="https://alphaeval.ai">🌐&nbsp;<b>Website</b></a> &nbsp;|&nbsp;
-    <a href="paper/AlphaEval_v0.pdf">📄&nbsp;<b>Paper</b></a> &nbsp;|&nbsp;
+    <a href="https://arxiv.org/abs/2604.12162">📄&nbsp;<b>arXiv</b></a> &nbsp;|&nbsp;
+    <a href="paper/AlphaEval.pdf">📑&nbsp;<b>PDF</b></a> &nbsp;|&nbsp;
     <a href="https://github.com/GAIR-NLP/AlphaEval"><img src="https://github.githubassets.com/favicons/favicon.svg" height="16">&nbsp;<b>GitHub</b></a> &nbsp;|&nbsp;
     <a href="README_zh.md"><b>中文</b></a>
   </p>
@@ -132,17 +133,21 @@ All agents are invoked via CLI within Docker-sandboxed environments with full ou
 
 ## Paper
 
-📄 **[AlphaEval: Evaluating Agents in Production (v0)](paper/AlphaEval_v0.pdf)**
+📄 **[AlphaEval: Evaluating Agents in Production](https://arxiv.org/abs/2604.12162)** &nbsp;·&nbsp; [local PDF](paper/AlphaEval.pdf)
 
-> This is an early version of the paper. It will be further revised and improved. An arXiv version will be released soon.
+> The paper will continue to be revised. See [BENCHMARKS.md](BENCHMARKS.md) for the living benchmark-comparison table — open a PR to add your benchmark.
 
 ## Citation
 
 ```bibtex
-@article{alphaeval2026,
-  title={AlphaEval: Evaluating Agents in Production},
-  author={Anonymous},
-  year={2026}
+@misc{lu2026alphaevalevaluatingagentsproduction,
+      title={AlphaEval: Evaluating Agents in Production},
+      author={Pengrui Lu and Bingyu Xu and Wenjun Zhang and Shengjia Hua and Xuanjian Gao and Ranxiang Ge and Lyumanshan Ye and Linxuan Wu and Yiran Li and Junfei Fish Yu and Yibo Zhang and Ruixin Li and Manxiang Li and Xiao Han and Xiaocong Zhou and Guangyao Chi and Zisheng Chen and Kaishen Chen and Kun Wang and Qihua Xu and Fengyue Meng and Yuchen Ni and Jiajun Li and Jinxiu Liu and Danfeng Zhang and Jingru Zhao and Pengfei Liu},
+      year={2026},
+      eprint={2604.12162},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.12162}
 }
 ```
 

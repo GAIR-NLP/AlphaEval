@@ -2,7 +2,8 @@
   <h1 align="center">AlphaEval：在生产环境中评估 AI 智能体</h1>
   <p align="center">
     <a href="https://alphaeval.ai">🌐&nbsp;<b>官网</b></a> &nbsp;|&nbsp;
-    <a href="paper/AlphaEval_v0.pdf">📄&nbsp;<b>论文</b></a> &nbsp;|&nbsp;
+    <a href="https://arxiv.org/abs/2604.12162">📄&nbsp;<b>arXiv</b></a> &nbsp;|&nbsp;
+    <a href="paper/AlphaEval.pdf">📑&nbsp;<b>PDF</b></a> &nbsp;|&nbsp;
     <a href="https://github.com/GAIR-NLP/AlphaEval"><img src="https://github.githubassets.com/favicons/favicon.svg" height="16">&nbsp;<b>GitHub</b></a> &nbsp;|&nbsp;
     <a href="README.md"><b>English</b></a>
   </p>
@@ -132,17 +133,21 @@ tasks/<task-name>/
 
 ## 论文
 
-📄 **[AlphaEval: Evaluating Agents in Production (v0)](paper/AlphaEval_v0.pdf)**
+📄 **[AlphaEval: Evaluating Agents in Production](https://arxiv.org/abs/2604.12162)** &nbsp;·&nbsp; [本地 PDF](paper/AlphaEval.pdf)
 
-> 这是论文的早期版本，将持续修订完善。arXiv 版本即将发布。
+> 论文将持续修订完善。Benchmark 对比表已移入 [BENCHMARKS.md](BENCHMARKS.md) 作为活文档 —— 欢迎提 PR 添加你的 benchmark。
 
 ## 引用
 
 ```bibtex
-@article{alphaeval2026,
-  title={AlphaEval: Evaluating Agents in Production},
-  author={Anonymous},
-  year={2026}
+@misc{lu2026alphaevalevaluatingagentsproduction,
+      title={AlphaEval: Evaluating Agents in Production},
+      author={Pengrui Lu and Bingyu Xu and Wenjun Zhang and Shengjia Hua and Xuanjian Gao and Ranxiang Ge and Lyumanshan Ye and Linxuan Wu and Yiran Li and Junfei Fish Yu and Yibo Zhang and Ruixin Li and Manxiang Li and Xiao Han and Xiaocong Zhou and Guangyao Chi and Zisheng Chen and Kaishen Chen and Kun Wang and Qihua Xu and Fengyue Meng and Yuchen Ni and Jiajun Li and Jinxiu Liu and Danfeng Zhang and Jingru Zhao and Pengfei Liu},
+      year={2026},
+      eprint={2604.12162},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.12162}
 }
 ```
 
