@@ -1,13 +1,8 @@
 <p align="center">
   <h1 align="center">AlphaEval: Evaluating Agents in Production</h1>
-  <p align="center">
-    <a href="https://alphaeval.ai">🌐&nbsp;<b>Website</b></a> &nbsp;|&nbsp;
-    <a href="https://arxiv.org/abs/2604.12162">📄&nbsp;<b>arXiv</b></a> &nbsp;|&nbsp;
-    <a href="paper/AlphaEval.pdf">📑&nbsp;<b>PDF</b></a> &nbsp;|&nbsp;
-    <a href="https://github.com/GAIR-NLP/AlphaEval"><img src="https://github.githubassets.com/favicons/favicon.svg" height="16">&nbsp;<b>GitHub</b></a> &nbsp;|&nbsp;
-    <a href="README_zh.md"><b>中文</b></a>
-  </p>
 </p>
+
+<p align="center"><em>Anonymous repository for double-blind review. Author, affiliation, project website, GitHub, and arXiv links are intentionally omitted.</em></p>
 
 <p align="center">
   A production-grounded evaluation framework for AI agents.<br>
@@ -67,8 +62,7 @@ Tasks are classified following the [O*NET](https://www.onetonline.org/find/descr
 ## Quick Start
 
 ```bash
-# Clone
-git clone https://github.com/GAIR-NLP/AlphaEval.git
+# Clone (URL withheld for anonymous review)
 cd AlphaEval
 
 # Configure
@@ -133,31 +127,19 @@ All agents are invoked via CLI within Docker-sandboxed environments with full ou
 
 ## Paper
 
-📄 **[AlphaEval: Evaluating Agents in Production](https://arxiv.org/abs/2604.12162)** &nbsp;·&nbsp; [local PDF](paper/AlphaEval.pdf)
-
-> The paper will continue to be revised. See [BENCHMARKS.md](BENCHMARKS.md) for the living benchmark-comparison table — open a PR to add your benchmark.
+The accompanying paper is omitted from this anonymous repository. See [BENCHMARKS.md](BENCHMARKS.md) for the living benchmark-comparison table.
 
 ## Citation
 
-```bibtex
-@misc{lu2026alphaevalevaluatingagentsproduction,
-      title={AlphaEval: Evaluating Agents in Production},
-      author={Pengrui Lu and Bingyu Xu and Wenjun Zhang and Shengjia Hua and Xuanjian Gao and Ranxiang Ge and Lyumanshan Ye and Linxuan Wu and Yiran Li and Junfei Fish Yu and Yibo Zhang and Ruixin Li and Manxiang Li and Xiao Han and Xiaocong Zhou and Guangyao Chi and Zisheng Chen and Kaishen Chen and Kun Wang and Qihua Xu and Fengyue Meng and Yuchen Ni and Jiajun Li and Jinxiu Liu and Danfeng Zhang and Jingru Zhao and Pengfei Liu},
-      year={2026},
-      eprint={2604.12162},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2604.12162}
-}
-```
+Citation details are withheld for anonymous review.
 
 ## Acknowledgements
 
-We thank Keyu Li, Tianze Xu, and Zhen Huang for their valuable contributions to this project.
+Acknowledgements are withheld for anonymous review.
 
 ## Contact
 
-For questions or collaboration inquiries, please contact: **lupengrui@sjtu.edu.cn**
+Contact information is withheld for anonymous review.
 
 ## License
 

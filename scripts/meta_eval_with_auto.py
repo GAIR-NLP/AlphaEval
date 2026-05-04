@@ -15,7 +15,7 @@ except ImportError:
     print("pip install openai first")
     sys.exit(1)
 
-BASE_DIR = Path("/data2/prlu/agent_eval")
+BASE_DIR = Path(os.environ.get("ALPHAEVAL_BASE_DIR", Path(__file__).resolve().parent.parent))
 TASKS_DIR = BASE_DIR / "tasks"
 FINAL_DIR = BASE_DIR / "final"
 OUTPUT_DIR = BASE_DIR / "meta_eval_results"

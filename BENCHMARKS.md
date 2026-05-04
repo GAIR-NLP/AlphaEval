@@ -176,7 +176,7 @@ This is a living comparison of AlphaEval with existing agent and LLM benchmarks 
 
 | Benchmark | Domain | Eval Type | Production | Multi-Modal | Underspec. | Diverse Eval | Expert Val. | Dynamic | Cross-Domain |
 |:--|:--|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **[AlphaEval](https://arxiv.org/abs/2604.12162)** | **6 Domains** | **Rule+Model** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **AlphaEval (Ours)** | **6 Domains** | **Rule+Model** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ---
 
